@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{F93F489F-9097-953A-3B34-4BD5542281C6}</ProjectGuid>
+	<ProjectGuid>{EEBC3047-D944-51E8-B212-621A0E099EC4}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -172,7 +172,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="StrumpyShaderEditor">
- <HintPath>/Users/kaili/Projects/WarlockWars/Assets/StrumpyShaderEditor/Editor/StrumpyShaderEditor.dll</HintPath>
+ <HintPath>/Users/kaili/Projects/warlock-wars/Assets/StrumpyShaderEditor/Editor/StrumpyShaderEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -207,9 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{76180A89-67CE-3CA8-5B5F-DEA98D3EEE83}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{32B72135-840C-3409-0043-E45274AA310E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{1C74F13C-6612-046F-C090-97BE81DFF4B7}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{6499D75A-902D-2AC1-BF6F-CD4CB6A652CC}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DungeonGen.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PathFinding.cs" Line="132" Column="4" />
+      <File FileName="Assets/Scripts/DungeonGen.cs" Line="128" Column="4" />
+      <File FileName="Assets/Scripts/Room.cs" Line="7" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/kaili/Projects/warlock-wars/Assets/Scripts/PathFinding.cs" line="65" />
+      <Breakpoint file="/Users/kaili/Projects/warlock-wars/Assets/Scripts/PathFinding.cs" line="73" />
+      <Breakpoint file="/Users/kaili/Projects/warlock-wars/Assets/Scripts/PathFinding.cs" line="61" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

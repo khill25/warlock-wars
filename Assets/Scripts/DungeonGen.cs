@@ -4,15 +4,17 @@ using System.Collections.Generic;
 
 public class DungeonGen : MonoBehaviour {
 
-	public int MaxX = 5;
-	public int MaxZ = 5;
+	public int MaxX = 5 * 3;
+	public int MaxZ = 5 * 3;
 	public float ScaleMultiplier = 13.0f;
 	public int MaxRooms = 15;
 	public int MinRooms = 1;
 	protected int[,] cells;
 	public int MaxAttempts = 30;
 	public List<Room> rooms = new List<Room>();
-	
+
+	PathFinding pathFinder = new PathFinding();
+
 	// TODO
 	/*
 	 * Assertions/parameters around placement of rooms,
@@ -35,6 +37,20 @@ public class DungeonGen : MonoBehaviour {
 
 	void Awake() {
 		GenerateDungeon();
+
+		// Create the paths for every room
+		Dictionary<Room, List<PathFinding.Node>> roomRoutes = new Dictionary<Room, List<PathFinding.Node>>();
+		for(int i = 0; i < rooms.Count; i++) {
+			Room s = rooms[i];
+			for(int j = i+1; j < rooms.Count; j++) {
+				Room g = rooms[j];
+				PathFinding.Node start = new PathFinding.Node(s.X_Cell, s.Y_Cell);
+				PathFinding.Node goal = new PathFinding.Node(g.X_Cell, g.Y_Cell);
+				pathFinder.findPath(cells, start, goal);
+				//roomRoutes.Add (s, pathFinder.findPath(cells, start, goal));
+			}
+		}
+
 	}
 
 	// Use this for initialization
@@ -78,6 +94,8 @@ public class DungeonGen : MonoBehaviour {
 				// 3 = 270
 				currentRoom.transform.Rotate(0,rand * 90,0);
 
+				currentRoom.X_Cell = xCell;
+				currentRoom.Y_Cell = yCell;
 				this.rooms.Add (currentRoom);
 				currentRoom = Instantiate<Room>(roomPrefab);
 			} else {
@@ -111,6 +129,17 @@ public class DungeonGen : MonoBehaviour {
 
 		// Nope this cell is occupied.
 		return false;
+
+//		for(int i = -1; i <= 1; i++) {
+//			if (x+i < 0 || x+i >= cells.GetLength(0)) continue;
+//			
+//			for(int j = -1; j <= 1; j++) {
+//				if (y+j < 0 || y+j >= cells.GetLength(1)) continue;
+//				
+//				if (x+i == x && y+j == y) continue;
+//				
+//				int n = cells[x+i,y+j];
+//		}
 
 	}
 

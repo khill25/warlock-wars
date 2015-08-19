@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{1C74F13C-6612-046F-C090-97BE81DFF4B7}</ProjectGuid>
+	<ProjectGuid>{6499D75A-902D-2AC1-BF6F-CD4CB6A652CC}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -50,6 +50,8 @@
      <Compile Include="Assets\Scripts\DoorMarker.cs" />
      <Compile Include="Assets\Scripts\DungeonGen.cs" />
      <Compile Include="Assets\Scripts\Junction.cs" />
+     <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\PathFinding.cs" />
      <Compile Include="Assets\Scripts\Room.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -160,7 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{76180A89-67CE-3CA8-5B5F-DEA98D3EEE83}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{32B72135-840C-3409-0043-E45274AA310E}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
