@@ -46,13 +46,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ColorPoint.cs" />
+     <Compile Include="Assets\Scripts\Card.cs" />
      <Compile Include="Assets\Scripts\Corridor.cs" />
+     <Compile Include="Assets\Scripts\Deck.cs" />
      <Compile Include="Assets\Scripts\DoorMarker.cs" />
      <Compile Include="Assets\Scripts\DungeonGen.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\IAction.cs" />
+     <Compile Include="Assets\Scripts\ITarget.cs" />
      <Compile Include="Assets\Scripts\Junction.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\PathFinding.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Room.cs" />
+     <Compile Include="Assets\Scripts\Stat.cs" />
+     <Compile Include="Assets\Scripts\Tile.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
